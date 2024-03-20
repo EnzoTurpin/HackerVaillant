@@ -1,0 +1,188 @@
+/* Réinitialisations et Paramètres Généraux */
+* {
+  box-sizing: border-box;
+}
+
+body,
+ul,
+li,
+a,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+/* En-tête */
+header {
+  background-color: #1e1344;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 20px;
+}
+
+/* Logo et Connexion */
+.logo,
+.login {
+  flex-basis: auto;
+}
+
+.logo img,
+.login a {
+  display: block;
+  width: 40px;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.login {
+  margin-left: auto;
+}
+
+nav a {
+  font-weight: 500;
+}
+
+/* Contenu Principal */
+main {
+  background-color: #000;
+  padding: 20px;
+  min-height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Titre */
+.title {
+  text-align: center;
+  margin: 30px;
+}
+
+/* Équipe */
+.team {
+  max-width: 1200px;
+  margin: auto;
+  flex-grow: 1;
+}
+
+/* Membre de l'équipe */
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  background-color: #c4c4dd;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Image de l'équipe */
+.team-image {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #000;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Image individuelle */
+.image {
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+/* Pied de Page */
+footer {
+  background-color: #1e1344;
+  text-align: right;
+  padding: 10px;
+}
+
+/* Filtres Personnalisés */
+.custom-filters {
+  flex-basis: 20%;
+  max-width: 240px;
+  min-width: 150px;
+  padding: 20px;
+  background-color: #2e2d4d;
+  color: white;
+  height: auto;
+  overflow-y: auto;
+  border-radius: 8px;
+  display: flex; /* Utilisez flex pour permettre l'alignement interne */
+  flex-direction: column; /* Empile les éléments verticalement */
+  align-items: flex-start; /* Alignez les éléments à gauche */
+}
+
+.custom-filters label {
+  display: flex; /* Utilisez flex pour chaque label pour aligner la checkbox et le texte */
+  align-items: center; /* Centre les éléments verticalement */
+  margin-bottom: 5px; /* Espacement entre chaque label */
+}
+
+/* Ajouter si nécessaire pour gérer l'espacement autour des checkboxes */
+.custom-filters input[type="checkbox"] {
+  margin-right: 5px; /* Espacement à droite de chaque checkbox */
+}
+
+/* Articles Personnalisés */
+.custom-articles .article {
+  display: flex;
+  align-items: center;
+  background-color: #32324d;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  gap: 20px;
+}
+
+/* Image de l'article */
+.custom-articles .article-image {
+  max-height: 200px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* Texte de l'article */
+.custom-articles .article-text {
+  flex-grow: 1;
+}
+
+/* Réactivité */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .custom-filters,
+  .team {
+    max-width: 100%;
+  }
+}
