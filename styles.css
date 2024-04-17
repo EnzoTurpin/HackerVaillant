@@ -44,6 +44,13 @@ nav {
 
 nav ul {
   display: flex;
+  justify-content: right;
+  flex-grow: 1;
+  gap: 20px;
+}
+
+#searchContainer {
+  display: flex;
   justify-content: center;
   flex-grow: 1;
   gap: 20px;
@@ -218,8 +225,43 @@ main {
 }
 
 /* Texte de l'article */
-.custom-articles .article-text {
-  flex-grow: 1;
+.challenge {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  gap: 20px;
+}
+
+.challenge .article {
+  flex: 1 0 calc(33.333% - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.challenge .challenge-image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0; /* Mettez la marge à 0 pour supprimer l'espace */
+}
+
+.challenge .article-text {
+  text-align: left;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.challenge .article-text h3,
+.challenge .article-text p {
+  margin: 0; /* Supprime toutes les marges par défaut */
+  padding: 0; /* Supprime tout padding par défaut si nécessaire */
 }
 
 /* Réactivité */
