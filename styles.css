@@ -240,7 +240,7 @@ main {
 
 /* Texte de l'article */
 .article-text {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .article-color {
