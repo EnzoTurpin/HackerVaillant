@@ -178,6 +178,14 @@ main {
   text-align: right;
 }
 
+.content-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+  align-items: flex-start;
+}
+
 /* Filtres Personnalisés */
 .custom-filters {
   flex-basis: 20%;
@@ -205,11 +213,17 @@ main {
 }
 
 /* Articles Personnalisés */
+.custom-articles {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .custom-articles .article {
   display: flex;
   align-items: center;
   background-color: #32324d;
-  margin-bottom: 20px;
   padding: 20px;
   border-radius: 8px;
   gap: 20px;
@@ -222,6 +236,15 @@ main {
   object-fit: cover;
   border-radius: 8px;
   flex-shrink: 0;
+}
+
+/* Texte de l'article */
+.article-text {
+  color: white;
+}
+
+.article-color {
+  color: white;
 }
 
 /* Texte de l'article */
