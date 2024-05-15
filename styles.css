@@ -44,7 +44,7 @@ nav {
 
 nav ul {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   flex-grow: 1;
   gap: 20px;
 }
@@ -260,8 +260,14 @@ main {
 
 .challenge .article-text h3,
 .challenge .article-text p {
-  margin: 0; /* Supprime toutes les marges par défaut */
-  padding: 0; /* Supprime tout padding par défaut si nécessaire */
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.article-text h3,
+.article-text p {
+  color: white;
 }
 
 /* Réactivité */
