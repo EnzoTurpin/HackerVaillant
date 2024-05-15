@@ -262,11 +262,9 @@ main {
 .challenge .article-text p {
   margin: 0;
   padding: 0;
-  color: white;
 }
 
-.article-text h3,
-.article-text p {
+.article-color {
   color: white;
 }
 
